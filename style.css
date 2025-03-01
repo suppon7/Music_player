@@ -1,0 +1,84 @@
+html {
+  background-image: linear-gradient(to bottom right, #7986cb, #1a237e);
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 379.25px;
+  height: 700px;
+  margin:  0 auto;
+  border-radius: 10px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+  webkit-backdrop-filter: opacity(3);
+  backdrop-filter: opacity(3);
+}
+
+.file-selector {
+  display: none;
+}
+
+.cover {
+  margin: 0 auto;
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  webkit-backdrop-filter: opacity(6);
+  backdrop-filter: opacity(6);
+}
+
+.icon-button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  transition: 0.2s;
+  margin: 10px;
+  color: white;
+  webkit-backdrop-filter: opacity(6);
+  backdrop-filter: opacity(6);
+}
+
+/* プレイリスト */
+.playlist {
+  width: 100%;
+  height: 400px;
+  list-style-type: none;
+  overflow: auto;
+}
+
+.playlist-item {
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  color:#fff;
+}
+
+.playlist-item:hover {
+  background-color: #1db954;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.control {
+  color: white;
+}
+
+.active {
+  background: #ff9800 !important;
+}
