@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soda Player</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Soda Player</header>
+    <main>
+        <div class="sidebar">
+            <h3>プレイリスト</h3>
+            <ul id="playlist" class="playlist"></ul>
+        </div>
+        <div class="content">
+            <input type="file" id="fileInput" class="file-selector" webkitdirectory multiple>
+            <div class="cover" id="cover">
+                <span class="material-icons" style="font-size: 100px; color: white;">music_note</span>
+            </div>
+            <div class="controls">
+                <div class="control-buttons">
+                    <div class="icon-button" id="shuffleBtn"><span class="material-icons">shuffle</span></div>
+                    <div class="icon-button" id="prevBtn"><span class="material-icons">skip_previous</span></div>
+                    <div class="icon-button" id="playPauseBtn"><span class="material-icons">play_arrow</span></div>
+                    <div class="icon-button" id="nextBtn"><span class="material-icons">skip_next</span></div>
+                    <div class="icon-button" id="repeatBtn"><span class="material-icons">repeat</span></div>
+                    <div class="volume-container">
+                        <div class="icon-button"><span class="material-icons">volume_up</span></div>
+                        <input type="range" id="volumeBar" class="volume-bar" value="50" min="0" max="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seekbar">
+            <span id="currentTrack"></span>
+            <span id="currentTime">00:00</span>
+            <input type="range" id="seekBar" value="0" step="1">
+            <span id="totalTime">00:00</span>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
